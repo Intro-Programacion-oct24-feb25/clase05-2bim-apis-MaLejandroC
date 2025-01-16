@@ -21,10 +21,12 @@ public class Principal {
         int valorA = OperadorUno.obtenerNumero(100);
         int valorB = OperadorUno.obtenerNumero(10);
         int suma = OperadorDos.obtenerSuma(valorA, valorB);
-        int multiplicacion = OperadorTres.obtenerMultiplicacion(valorA, 
-                                                                valorB);
-        
-        Imprimir.imprimirmensaje( valorA, valorB,  suma,  multiplicacion);
+        int multiplicacion = OperadorTres.obtenerMultiplicacion(valorA,
+                valorB);
+        /* estoy llamando a un procedimiento que se encarga de imprimir el 
+mansaje final de la operacion con valorA y valorB, procedimiento importado d
+        esde el paquete06 en la clase Imprimir con el metodo imprimirmensaje*/
+        Imprimir.imprimirmensaje(valorA, valorB, suma, multiplicacion);
         
     }
 }
